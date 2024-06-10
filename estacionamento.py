@@ -6,7 +6,7 @@ hora_atual = datetime.now().strftime('%H:%M:%S')
 
 def cadastrar_placa():
 
-  print('Bem-Vindo ao Estacionamentos')
+  print('Bem-Vindo ao Estacionamento')
   time.sleep(1)
   print()
   print('Aqui você pode estacionar seu carro e retirar quando quiser')
@@ -27,7 +27,7 @@ def cadastrar_placa():
    print('3 - Sair')
    print()
    escolha = input(':')
-   if escolha == '1' or escolha.lower == 'estacionar':
+   if escolha == '1' or escolha.lower() == 'estacionar':
      print('Ok, vamos estacionar seu carro')
      time.sleep(1)
      print()
@@ -35,7 +35,7 @@ def cadastrar_placa():
      placa = input(':')
      lista_placas.append(placa)
      print(f'O carro foi estacionado com sucesso as {hora_atual}')
-   elif escolha == '2' or escolha.lower == 'retirar':
+   elif escolha == '2' or escolha.lower() == 'retirar':
      print('Ok, vamos retirar seu carro')
      time.sleep(1)
      print()
@@ -50,7 +50,7 @@ def cadastrar_placa():
      print('Ok, volte sempre')
      time.sleep(1)
      print()
-     print(f'Cliente Saiu ás {hora_atual}')
+     print(f'Cliente Saiu as {hora_atual}')
      break
      
 cadastrar_placa()
